@@ -1,0 +1,88 @@
+﻿
+:root {
+    --primary: #246B45;
+    --primary-dark: #1B5134;
+    --primary-light: #E8F1E9;
+
+    --background: #F6F3EA;
+    --surface: #FFFFFF;
+    --accent: #E99A35;
+    --dark: #25352D;
+
+    --text-secondary: #78847C;
+    --border: #EAECE7;
+
+    --blue-light: #E9F0FA;
+    --orange-light: #FFF1E1;
+    --yellow-light: #FFF4D9;
+
+    --sidebar-width: 250px;
+
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 18px;
+
+    --shadow-card: 0 3px 15px rgba(37, 53, 45, .035);
+    --transition: .2s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--dark);
+    font-size: 15px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+button, a, select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+svg {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes growBar {
+    from { transform: scaleY(0); }
+    to { transform: scaleY(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
